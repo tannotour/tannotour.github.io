@@ -99,24 +99,24 @@
 
 
 
-  <meta name="description" content="概述还有两年毕业，需要准备下算法知识了，这篇以及后面的文章为leetcode上总结的题目以及解题思路，与大家分享，共同进步。 题目描述给定一个排序数组，需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。不要使用额外的数组空间，必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。 示例1给定数组 nums = [1,1,2],函数应该返回新的长度 2, 并且原">
+  <meta name="description" content="概述还有两年毕业，需要准备下算法知识了，从leetcode上总结的题目以及解题思路，与大家分享，共同进步。 题目描述给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。 示例1123456输入: [1,2,3,4,5,6,7] 和 k = 3输出: [5,6,7,1,2,3,4]解释:向右旋转 1 步: [7,1,2,3,4,5,6]向右旋转 2 步: [6,7,1,2,3,4,">
 <meta name="keywords" content="算法-数组">
 <meta property="og:type" content="article">
-<meta property="og:title" content="从排序数组中删除重复元素">
-<meta property="og:url" content="https://tannotour.github.io/2018/09/02/数组-从排序数组中删除重复项/index.html">
+<meta property="og:title" content="旋转数组">
+<meta property="og:url" content="https://tannotour.github.io/2018/09/15/数组-旋转数组/index.html">
 <meta property="og:site_name" content="tannotour">
-<meta property="og:description" content="概述还有两年毕业，需要准备下算法知识了，这篇以及后面的文章为leetcode上总结的题目以及解题思路，与大家分享，共同进步。 题目描述给定一个排序数组，需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。不要使用额外的数组空间，必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。 示例1给定数组 nums = [1,1,2],函数应该返回新的长度 2, 并且原">
-<meta property="og:updated_time" content="2018-09-02T02:55:00.150Z">
+<meta property="og:description" content="概述还有两年毕业，需要准备下算法知识了，从leetcode上总结的题目以及解题思路，与大家分享，共同进步。 题目描述给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。 示例1123456输入: [1,2,3,4,5,6,7] 和 k = 3输出: [5,6,7,1,2,3,4]解释:向右旋转 1 步: [7,1,2,3,4,5,6]向右旋转 2 步: [6,7,1,2,3,4,">
+<meta property="og:updated_time" content="2018-09-15T15:33:00.497Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="从排序数组中删除重复元素">
-<meta name="twitter:description" content="概述还有两年毕业，需要准备下算法知识了，这篇以及后面的文章为leetcode上总结的题目以及解题思路，与大家分享，共同进步。 题目描述给定一个排序数组，需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。不要使用额外的数组空间，必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。 示例1给定数组 nums = [1,1,2],函数应该返回新的长度 2, 并且原">
+<meta name="twitter:title" content="旋转数组">
+<meta name="twitter:description" content="概述还有两年毕业，需要准备下算法知识了，从leetcode上总结的题目以及解题思路，与大家分享，共同进步。 题目描述给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。 示例1123456输入: [1,2,3,4,5,6,7] 和 k = 3输出: [5,6,7,1,2,3,4]解释:向右旋转 1 步: [7,1,2,3,4,5,6]向右旋转 2 步: [6,7,1,2,3,4,">
 
 
 
 
 
 
-  <link rel="canonical" href="https://tannotour.github.io/2018/09/02/数组-从排序数组中删除重复项/"/>
+  <link rel="canonical" href="https://tannotour.github.io/2018/09/15/数组-旋转数组/"/>
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>从排序数组中删除重复元素 | tannotour</title>
+  <title>旋转数组 | tannotour</title>
   
 
 
@@ -277,7 +277,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://tannotour.github.io/2018/09/02/数组-从排序数组中删除重复项/">
+    <link itemprop="mainEntityOfPage" href="https://tannotour.github.io/2018/09/15/数组-旋转数组/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="tannotour">
@@ -294,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">从排序数组中删除重复元素</h1>
+          <h1 class="post-title" itemprop="name headline">旋转数组</h1>
         
 
         <div class="post-meta">
@@ -306,7 +306,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-02T10:19:01+08:00">2018-09-02</time>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-09-15T23:25:38+08:00">2018-09-15</time>
             
 
             
@@ -343,13 +343,12 @@
       
 
       
-        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>还有两年毕业，需要准备下算法知识了，这篇以及后面的文章为leetcode上总结的题目以及解题思路，与大家分享，共同进步。</p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个排序数组，需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。<br>不要使用额外的数组空间，必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。</p>
-<h3 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h3><p>给定数组 nums = [1,1,2],<br>函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。<br>不需要考虑数组中超出新长度后面的元素。</p>
-<h3 id="示例2"><a href="#示例2" class="headerlink" title="示例2"></a>示例2</h3><p>给定 nums = [0,0,1,1,1,2,2,3,3,4],<br>函数应该返回新的长度 5, 并且原数组 nums 的前五个元素被修改为 0, 1, 2, 3, 4。<br>不需要考虑数组中超出新长度后面的元素。</p>
-<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>为什么返回数值是整数，但输出的答案是数组呢?<br>请注意，输入数组是以“引用”方式传递的，这意味着在函数里修改输入数组对于调用者是可见的。<br>你可以想象内部操作如下:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// nums 是以“引用”方式传递的。也就是说，不对实参做任何拷贝</span><br><span class="line">int len = removeDuplicates(nums);</span><br><span class="line">// 在函数里修改输入数组对于调用者是可见的。</span><br><span class="line">// 根据函数返回的长度, 它会打印出数组中该长度范围内的所有元素。</span><br><span class="line">for (int i = 0; i &lt; len; i++) &#123;</span><br><span class="line">    print(nums[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>首先，我们分析一下题目：<br>题目中提到输入是一个数组，并且这个数组是有序的；<br>只需要将重复元素删掉，后面的元素补上来即可；<br>返回不重复元素的个数。<br>根据以上题目分析，我们要至少遍历数组一次，在遍历过程中，需要知道是从哪个元素开始重复的，那么就可以使用一个变量 preValuel 来存储上一个元素的值，通过 nums[i] != preValue 判断当前元素是否与上一个元素重复，如果不重复的话就将计数加一并更新原数组以及变量 preValue 。<br>好了，思路大概就是上面所述，可能有些抽象或者是我表述的不是很清晰，那么看下下面的代码实现，代码是kotlin编写的。</p>
-<h3 id="具体实现"><a href="#具体实现" class="headerlink" title="具体实现"></a>具体实现</h3><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">removeDuplicates</span><span class="params">(nums: <span class="type">IntArray</span>)</span></span>: <span class="built_in">Int</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(nums.isEmpty()) <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        <span class="keyword">var</span> result = <span class="number">1</span></span><br><span class="line">        <span class="keyword">var</span> preValue = nums[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">for</span>(i <span class="keyword">in</span> <span class="number">1</span> until nums.size)&#123;</span><br><span class="line">            <span class="keyword">if</span>(nums[i] != preValue)&#123;</span><br><span class="line">                nums[result] = nums[i]</span><br><span class="line">                preValue = nums[i]</span><br><span class="line">                result ++</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>还有两年毕业，需要准备下算法知识了，从leetcode上总结的题目以及解题思路，与大家分享，共同进步。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。</p>
+<h3 id="示例1"><a href="#示例1" class="headerlink" title="示例1"></a>示例1</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">输入: [1,2,3,4,5,6,7] 和 k = 3</span><br><span class="line">输出: [5,6,7,1,2,3,4]</span><br><span class="line">解释:</span><br><span class="line">向右旋转 1 步: [7,1,2,3,4,5,6]</span><br><span class="line">向右旋转 2 步: [6,7,1,2,3,4,5]</span><br><span class="line">向右旋转 3 步: [5,6,7,1,2,3,4]</span><br></pre></td></tr></table></figure>
+<h3 id="示例2"><a href="#示例2" class="headerlink" title="示例2"></a>示例2</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">输入: [-1,-100,3,99] 和 k = 2</span><br><span class="line">输出: [3,99,-1,-100]</span><br><span class="line">解释: </span><br><span class="line">向右旋转 1 步: [99,-1,-100,3]</span><br><span class="line">向右旋转 2 步: [3,99,-1,-100]</span><br></pre></td></tr></table></figure>
+<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>尽可能想出更多的解决方案，至少有三种不同的方法可以解决这个问题。<br>要求使用空间复杂度为 O(1) 的原地算法。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">## 解题思路</span><br><span class="line">### 分析</span><br><span class="line">首先，我们分析一下题目：</span><br><span class="line">输入是一个数组nums和一个整数k，我们需要做的就是将这个数组往右移k位，第n-1位覆盖第n位上的数组，最后一位补到下标为0的位置上；</span><br><span class="line">这个题目让我想到了以前学过的二进制循环移位器，其实是一样的，现在需要我们自己来实现一个简单的循环移位器了；</span><br><span class="line">大体思路就是每次只往右移一位，直到移动了k次为止。</span><br><span class="line">下面为代码实现，代码是kotlin编写的。</span><br><span class="line">### 具体实现</span><br><span class="line">```kotlin</span><br><span class="line">class Solution &#123;</span><br><span class="line">    fun rotate(nums: IntArray, k: Int): Unit &#123;</span><br><span class="line">        for(i in 0 until k)&#123;</span><br><span class="line">            val last = nums.last()</span><br><span class="line">            for(index in nums.size-1 downTo 1)&#123;</span><br><span class="line">                nums[index] = nums[index-1]</span><br><span class="line">            &#125;</span><br><span class="line">            nums[0] = last</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -382,8 +381,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/19/算法学习-1/" rel="next" title="'算法学习笔记-1'">
-                <i class="fa fa-chevron-left"></i> '算法学习笔记-1'
+              <a href="/2018/09/02/数组-从排序数组中删除重复项/" rel="next" title="从排序数组中删除重复元素">
+                <i class="fa fa-chevron-left"></i> 从排序数组中删除重复元素
               </a>
             
           </div>
@@ -391,10 +390,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/09/15/数组-旋转数组/" rel="prev" title="旋转数组">
-                旋转数组 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -527,7 +522,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">2.</span> <span class="nav-text">题目描述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例1"><span class="nav-number">2.1.</span> <span class="nav-text">示例1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例2"><span class="nav-number">2.2.</span> <span class="nav-text">示例2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说明"><span class="nav-number">2.3.</span> <span class="nav-text">说明</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解题思路"><span class="nav-number">3.</span> <span class="nav-text">解题思路</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#分析"><span class="nav-number">3.1.</span> <span class="nav-text">分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#具体实现"><span class="nav-number">3.2.</span> <span class="nav-text">具体实现</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目描述"><span class="nav-number">2.</span> <span class="nav-text">题目描述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例1"><span class="nav-number">2.1.</span> <span class="nav-text">示例1</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例2"><span class="nav-number">2.2.</span> <span class="nav-text">示例2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#说明"><span class="nav-number">2.3.</span> <span class="nav-text">说明</span></a></li></ol></li></ol></div>
             
 
           </div>
